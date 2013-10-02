@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1380753958509
+Build-Jdk: 1.6.0_51
+Built-By: mszulc
+Bundle-Description: Maven Multimodule project for AEM Automator.
+Bundle-ManifestVersion: 2
+Bundle-Name: AEM Automator Bundle
+Bundle-SymbolicName: com.markszulc.AEMautomator-bundle
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.markszulc;uses:="javax.jcr,com.day.cq.workflow.metad
+ ata,com.day.cq.workflow,com.day.cq.workflow.exec,org.slf4j,com.day.cq.w
+ cm.api,org.apache.sling.api.resource";version="1.0.0.SNAPSHOT"
+Import-Package: com.day.cq.wcm.api;version="[1.0,2)",com.day.cq.workflow
+ ,com.day.cq.workflow.exec,com.day.cq.workflow.metadata,javax.jcr;versio
+ n="[2.0,3)",org.apache.sling.api.resource;version="[2.3,3)",org.slf4j;v
+ ersion="[1.5,2)"
+Service-Component: OSGI-INF/serviceComponents.xml
+Tool: Bnd-1.50.0

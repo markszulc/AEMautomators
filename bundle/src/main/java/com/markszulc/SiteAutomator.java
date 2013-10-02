@@ -41,6 +41,8 @@ public class SiteAutomator implements WorkflowProcess {
             String path = workflowData.getPayload().toString();
             //logger.info("********* " + path);
 
+            ResourceResolver resourceResolver = null;
+
             try {
                 Node sourceNode = (Node) session.getSession().getNode(path);
                 String siteCompany = sourceNode.getProperty("company").getString();
@@ -49,7 +51,6 @@ public class SiteAutomator implements WorkflowProcess {
 
                 logger.info("********* Site: " + siteCompany);
 
-                ResourceResolver resourceResolver = null;
                 try {
                     resourceResolver = resourceResolverFactory.getAdministrativeResourceResolver(null);
                 }
@@ -89,6 +90,13 @@ public class SiteAutomator implements WorkflowProcess {
 
             } catch (RepositoryException e) {
                 throw new WorkflowException(e.getMessage(),e);
+
+            } finally {
+                // Clean up after yourself please!!!
+                if (resourceResolver != null) {
+                    resourceResolver.close();
+                    resourceResolver = null;
+                }
             }
         }
 
