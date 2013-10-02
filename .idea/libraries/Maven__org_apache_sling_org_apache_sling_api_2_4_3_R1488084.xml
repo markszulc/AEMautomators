@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.sling:org.apache.sling.api:2.4.3-R1488084">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/sling/org.apache.sling.api/2.4.3-R1488084/org.apache.sling.api-2.4.3-R1488084.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/sling/org.apache.sling.api/2.4.3-R1488084/org.apache.sling.api-2.4.3-R1488084-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/sling/org.apache.sling.api/2.4.3-R1488084/org.apache.sling.api-2.4.3-R1488084-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
